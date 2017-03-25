@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="64.2857142857141" y="716.142857142857">main.java.view.Consola</node>
+    <node x="0.0" y="249.0">main.java.repository.repo.CartiRepo</node>
+    <node x="287.0" y="263.0">main.java.repository.repoMock.CartiRepoMock</node>
+    <node x="122.0" y="0.0">main.java.repository.repoInterfaces.CartiRepoInterface</node>
+    <node x="-548.2857142857142" y="818.9999999999999">main.java.begin.Start</node>
+    <node x="833.8571428571428" y="641.4285714285713">main.java.model.Carte</node>
+    <node x="-632.0" y="-36.714285714285644">main.java.control.BibliotecaCtrl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.java.control.BibliotecaCtrl" target="main.java.repository.repoInterfaces.CartiRepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.repository.repoMock.CartiRepoMock" target="main.java.repository.repoInterfaces.CartiRepoInterface">
+      <point x="0.0" y="-113.5" />
+      <point x="436.5" y="224.0" />
+      <point x="366.5" y="224.0" />
+      <point x="81.5" y="99.5" />
+    </edge>
+    <edge source="main.java.view.Consola" target="main.java.model.Carte">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.view.Consola" target="main.java.control.BibliotecaCtrl">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.begin.Start" target="main.java.control.BibliotecaCtrl">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.begin.Start" target="main.java.repository.repo.CartiRepo">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.repository.repo.CartiRepo" target="main.java.repository.repoInterfaces.CartiRepoInterface">
+      <point x="0.0" y="-127.5" />
+      <point x="133.5" y="224.0" />
+      <point x="203.5" y="224.0" />
+      <point x="-81.5" y="99.5" />
+    </edge>
+    <edge source="main.java.begin.Start" target="main.java.view.Consola">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.java.repository.repoMock.CartiRepoMock" target="main.java.model.Carte">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="403.57142857142844" y="565.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
