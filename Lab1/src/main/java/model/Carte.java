@@ -18,6 +18,14 @@ public class Carte {
         cuvinteCheie = new ArrayList<String>();
         editura = "";
     }
+    
+    public Carte(Carte carte) {
+        titlu = carte.getTitlu();
+        referenti = carte.getReferenti();
+        anAparitie = carte.getAnAparitie();
+        cuvinteCheie = carte.getCuvinteCheie();
+        editura = carte.getEditura();
+    }
 
     public static Carte getCarteFromString(String carte) {
         Carte c = new Carte();
