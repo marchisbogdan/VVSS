@@ -33,27 +33,27 @@ public class CartiRepoMock implements CartiRepoInterface {
 
     @Override
     public List<Carte> cautaCarte(String ref) {
-        List<Carte> carti = getCarti();
-        List<Carte> cartiGasite = new ArrayList<Carte>();
-        int i = 0;
-        while (i < carti.size()) {
-            boolean flag = false;
-            List<String> lref = carti.get(i).getReferenti();
-            int j = 0;
-            while (j < lref.size()) {
-                if (lref.get(j).toLowerCase().contains(ref.toLowerCase())) {
-                    flag = true;
-                    break;
+        List<Carte> carti = getCarti(); 										// C1
+        List<Carte> cartiGasite = new ArrayList<Carte>();						// C2
+        int i = 0;																// C3
+        while (i < carti.size()) {												// R4
+            boolean flag = false;												// C5
+            List<String> lref = carti.get(i).getReferenti();                    // C6
+            int j = 0;															// C7
+            while (j < lref.size()) {											// R8
+                if (lref.get(j).toLowerCase().contains(ref.toLowerCase())) {	// R9
+                    flag = true;												// C10
+                    break;														// 
                 }
-                j++;
+                j++;															// C11
             }
-            if (flag == true) {
-                cartiGasite.add(carti.get(i));
+            if (flag == true) {													// R12
+                cartiGasite.add(carti.get(i));									// C13
             }
-            i++;
+            i++;																// C14
         }
-        return cartiGasite;
-    }
+        return cartiGasite;														// C15
+    }																			// S16
 
     @Override
     public List<Carte> getCarti() {
